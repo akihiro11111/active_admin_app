@@ -6,3 +6,5 @@
 
 
 1. Active Adminを使って、管理者画面作成。
+
+2. Ransackを使った検索機能
