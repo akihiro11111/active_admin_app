@@ -54,3 +54,7 @@ gem 'devise'
 gem 'rails-i18n'
 #検索機能
 gem 'ransack'
+#markdown導入
+gem 'redcarpet', '~> 2.3.0'
+#シンタックスハイライト
+gem 'coderay'
