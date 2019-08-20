@@ -7,7 +7,6 @@ class User < ApplicationRecord
     self.address = params[:address]
   end
 
-
   def disp_greet
     case self.address
     when "沖縄"
@@ -24,7 +23,7 @@ class User < ApplicationRecord
   end
 
   def search
-    User.ransack(name_cont: @search_name, age_eq: @search_age, address_eq: @search_address).result
+    User.ransack(name_cont: @search_name, age_eq: @search_age).result
   end
 
 end
