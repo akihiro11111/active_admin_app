@@ -1,0 +1,13 @@
+current directory: /Users/Owner/Desktop/online_salon_app/vendor/bundle/ruby/2.5.0/gems/json-2.2.0/ext/json
+/Users/Owner/.rbenv/versions/2.5.0/bin/ruby -r ./siteconf20190820-1468-i9za42.rb extconf.rb
+creating Makefile
+
+current directory: /Users/Owner/Desktop/online_salon_app/vendor/bundle/ruby/2.5.0/gems/json-2.2.0/ext/json
+make "DESTDIR=" clean
+
+current directory: /Users/Owner/Desktop/online_salon_app/vendor/bundle/ruby/2.5.0/gems/json-2.2.0/ext/json
+make "DESTDIR="
+make: Nothing to be done for `all'.
+
+current directory: /Users/Owner/Desktop/online_salon_app/vendor/bundle/ruby/2.5.0/gems/json-2.2.0/ext/json
+make "DESTDIR=" install

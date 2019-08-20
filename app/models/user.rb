@@ -1,12 +1,11 @@
 class User < ApplicationRecord
-  attr_accessor  :search_name, :search_age, :search_address, :name, :age, :address
+  attr_accessor :search_name, :search_age, :search_address, :name, :age, :address
 
-  # def initialize(**params)
-  #   self.name = params[:name]
-  #   self.age  = params[:age]
-  #   self.address = params[:address]
-  # end
-
+  def initialize(**params)
+    self.name = params[:name]
+    self.age  = params[:age]
+    self.address = params[:address]
+  end
 
   def disp_greet
     case self.address
@@ -24,7 +23,7 @@ class User < ApplicationRecord
   end
 
   def search
-    User.ransack(name_cont: @search_name, age_eq: @search_age, address_eq: @search_address).result
+    User.ransack(name_cont: @search_name, age_eq: @search_age).result
   end
 
 end

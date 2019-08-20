@@ -1,11 +1,22 @@
+<%
+  text =<<~TEXT
+    # 大見出し
+    ## 中見出し
+    ### 小見出し
 
+    ```rb
+    puts "hello world"
+    ```
+  TEXT
+ %>
 
+<%= markdown(text).html_safe %>
 
 <%= form_tag('/users', method: :get) do %>
   <%= label_tag :名前 %>
-  <%= text_field_tag :search_name %>
+  <%= text_field_tag :search_name %><br>
   <%= label_tag :年齢 %>
-  <%= text_field_tag :search_age %>
+  <%= text_field_tag :search_age %><br>
   <%= label_tag :住所 %>
   <%= text_field_tag :search_address %>
   <%= submit_tag '検索' %>
