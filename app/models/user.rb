@@ -23,7 +23,7 @@ class User < ApplicationRecord
   end
 
   def search
-    User.ransack(name_cont: @search_name, age_eq: @search_age).result
+    User.ransack(name_cont: @search_name, age_eq: @search_age, address_eq: @search_address).result
   end
 
 end
