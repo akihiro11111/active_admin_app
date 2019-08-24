@@ -16,6 +16,9 @@
 //= require turbolinks
 //= require_tree .
 
+//= require jquery
+//= require jquery_ujs
+
 window.addEventListener('DOMContentLoaded', function(){
   var ctx = document.getElementById("myChart").getContext('2d')
   var myChart = new Chart(ctx, {

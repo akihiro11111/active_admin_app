@@ -63,3 +63,5 @@ gem 'coderay'
 gem 'chart-js-rails', '~> 0.1.4'
 #データの受け渡し
 gem 'gon'
+#jQuery導入
+gem 'jquery-rails'

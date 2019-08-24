@@ -7,9 +7,15 @@
     <%= include_gon %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <h1>Ajax#index</h1>
+    <p id="hoge">赤色になるよ</p>
     <%= yield %>
+    <script>
+      $("#hoge").css("color","red")
+    </script>
   </body>
 </html>
