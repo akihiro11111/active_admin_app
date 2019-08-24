@@ -59,3 +59,9 @@ gem 'ransack'
 gem 'redcarpet', '~> 2.3.0'
 #シンタックスハイライト
 gem 'coderay'
+#chartグラフ
+gem 'chart-js-rails', '~> 0.1.4'
+#データの受け渡し
+gem 'gon'
+#jQuery導入
+gem 'jquery-rails'
